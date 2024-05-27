@@ -1,0 +1,75 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+gems: ['jekyll/scholar']
+
+
+# Site settings
+title: The Cotrufo Lab
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Website of the Cotrufo Research Lab.
+baseurl: ""
+url: ""
+
+include:
+  - .htaccess
+  - _pages
+
+sass:
+  sass_dir: _sass
+
+publications:
+  year_min: 2020
+  year_max: 2024
+
+scholar:
+  style: ieee
+  locale: en
+
+  sort_by: year,month,title
+  order: descending
+
+  group_by: none
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: bib.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
+
+# # Conversion
+# markdown: kramdown
+# highlighter: rouge
+# lsi: false
+# excerpt_separator: "\n\n"
+# incremental: false
+
+
+
+# # Markdown Processing
+# kramdown:
+#   input: GFM
+#   hard_wrap: false
+#   auto_ids: true
+#   footnote_nr: 1
+#   entity_output: as_char
+#   toc_levels: 1..6
+#   smart_quotes: lsquo,rsquo,ldquo,rdquo
+#   enable_coderay: false
+#   parse_block_html: true # default for kramdown is false. This will enable using Markdown links

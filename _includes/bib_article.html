@@ -1,0 +1,64 @@
+
+{% assign entry = include.content %}
+
+{% assign authors_string = "" %}
+{% for author in entry.author_array %}
+    {% assign names = author.first | split: " "; %}
+    {% for name in names %}
+        {% assign initial = name | slice: 0  %}
+        {% assign authors_string = authors_string | append: initial | append: ". "  %}
+    {% endfor %}
+    {% assign authors_string = authors_string | append: author.last | append: ", " %}
+{% endfor %}
+{% assign pos = authors_string | size | minus: 2 %}
+{% assign authors_string = authors_string | slice: 0, pos %}
+{% assign authors_string = authors_string | append: "."  %}
+
+{% if entry.status == "underreview" %}
+    {% capture journal_string %}{% endcapture %}
+    {% if entry.url%}
+        {% capture journal_string %}
+        {{journal_string}} 
+        <a class="black_link" href="{{ entry.url }}">Preprint</a>
+        {% endcapture %}
+    {% endif %}
+{% elsif  entry.status == "inpress"%}
+    {% capture journal_string %}In press in <span class="text-primary">{{entry.journal}}</span>{% endcapture %}
+    {% if entry.url%}
+        {% capture journal_string %}
+        {{journal_string}}, 
+        <a class="black_link" href="{{ entry.url }}">Preprint</a>
+        {% endcapture %}
+    {% endif %}
+{% else %}
+    {% capture journal_string %}{{entry.journal}}{% endcapture %}
+    {% if entry.volume %}
+        {% capture journal_string %}{{journal_string}} <b>{{ entry.volume }}</b>{% endcapture %}
+    {% endif %}
+    {% if entry.number %}
+        {% capture journal_string %}{{journal_string}} ({{ entry.number}}),{% endcapture %}
+    {% else %}
+        {% capture journal_string %}{{journal_string}},{% endcapture %}
+    {% endif %}
+    {% if entry.pages %}
+        {% capture journal_string %}{{journal_string}} {{ entry.pages }},{% endcapture %}
+    {% endif %}
+    {% if entry.year %}
+        {% capture journal_string %}{{journal_string}} ({{ entry.year }}).{% endcapture %}
+    {% endif %}
+    {% if entry.url%}
+        {% capture journal_string %}   
+        <a class="regular_link" href="{{ entry.url }}">{{journal_string}}</a>
+        {% endcapture %}
+    {% endif %}
+{% endif %}
+
+{% capture reference %}
+<p>
+<b>{{ entry.title }}</b><br/>
+<em>{{authors_string}}</em><br/>
+{{ journal_string }}
+</p>
+{% endcapture %}
+
+{{reference}}
