@@ -14,7 +14,7 @@
 {% assign authors_string = authors_string | slice: 0, pos %}
 {% assign authors_string = authors_string | append: "."  %}
 
-{% if entry.status == "underreview" %}
+{% if entry.usera == "underreview" %}
     {% capture journal_string %}{% endcapture %}
     {% if entry.url%}
         {% capture journal_string %}
@@ -22,7 +22,7 @@
         <a class="black_link" href="{{ entry.url }}">Preprint</a>
         {% endcapture %}
     {% endif %}
-{% elsif  entry.status == "inpress"%}
+{% elsif  entry.usera == "inpress"%}
     {% capture journal_string %}In press in <span class="text-primary">{{entry.journal}}</span>{% endcapture %}
     {% if entry.url%}
         {% capture journal_string %}

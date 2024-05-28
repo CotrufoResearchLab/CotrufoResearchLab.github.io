@@ -8,12 +8,12 @@ permalink: /publications/
 
 
 
-<ul class="nav nav-tabs" role="tablist">
+<ul class="nav nav-tabs nav-justified" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" data-bs-toggle="tab" href="#papers" aria-selected="false" role="tab" tabindex="-1">Journal Articles</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" data-bs-toggle="tab" href="#proceedings" aria-selected="false" tabindex="-1" role="tab">Conference Proceedings</a>
+    <a class="nav-link" data-bs-toggle="tab" href="#proceedings" aria-selected="false" tabindex="-1" role="tab">Conferences</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" data-bs-toggle="tab" href="#books" aria-selected="false" tabindex="-1" role="tab">Book Chapters</a>
@@ -32,20 +32,23 @@ permalink: /publications/
         {% assign number_articles = site.bibliography.size %}
         {% assign article_numb = number_articles %}
 
-        <h4>Under Review</h4>
-        {% bib_variable -f bib.bib -q @article[status=underreview] %}
+        {% bib_variable -f bib.bib -q @article[usera=underreview] %}
+        {% assign article_undereview_numb = site.bibliography.size %}
+        {% if article_undereview_numb > 0 %}
+          <h4>Under Review</h4>
+          
 
-        <ol>
-        {% for e in site.bibliography %}
-            {% assign entry = e.data %}
-            
-            <li value="{{article_numb}}">
-            {% include bib_article.html content=entry%}
-            </li>
-            {% assign article_numb = article_numb | minus: 1  %}
-        {% endfor %}
-        </ol>
-
+          <ol>
+          {% for e in site.bibliography %}
+              {% assign entry = e.data %}
+              
+              <li value="{{article_numb}}">
+              {% include bib_article.html content=entry%}
+              </li>
+              {% assign article_numb = article_numb | minus: 1  %}
+          {% endfor %}
+          </ol>
+        {% endif %}
 
         {% for year in (site.publications.year_min..site.publications.year_max) reversed %}
         <h4>{{year}}</h4>

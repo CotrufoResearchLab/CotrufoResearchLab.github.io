@@ -39,12 +39,14 @@
     {% endcapture %}
 {% endif %}
 
-{% if entry.note%}
-    {% capture journal_string %}{{journal_string}}, <span class="text-primary"><b>{{entry.note}}</b></span>{% endcapture %}
+{% if entry.addendum%}
+    {% capture journal_string %}{{journal_string}}, <span class="text-primary"><b>{{entry.addendum}}</b></span>{% endcapture %}
 {% endif %}
-{% if entry.type=="invited"%}
-    {% capture journal_string %}{{journal_string}}, (<span class="text-primary"><b>invited talk</b></span>){% endcapture %}
-{% endif %}
+    {% comment %}
+    {% if entry.type=="invited"%}
+        {% capture journal_string %}{{journal_string}}, (<span class="text-primary"><b>invited talk</b></span>){% endcapture %}
+    {% endif %}
+    {% endcomment %}
 
 {% capture journal_string %}{{journal_string}}.{% endcapture %}
 
