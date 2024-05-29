@@ -1,62 +1,59 @@
+{%- assign entry = include.content -%}
 
-{% assign entry = include.content %}
+{%- assign authors_string = "" -%}
+{%- for author in entry.author_array -%}
+    {%- assign names = author.first | split: " "; -%}
+    {%- for name in names -%}
+        {%- assign initial = name | slice: 0  -%}
+        {%- assign authors_string = authors_string | append: initial | append: ". "  -%}
+    {%- endfor -%}
+    {%- assign authors_string = authors_string | append: author.last | append: ", " -%}
+{%- endfor -%}
+{%- assign pos = authors_string | size | minus: 2 -%}
+{%- assign authors_string = authors_string | slice: 0, pos -%}
+{%- assign authors_string = authors_string | append: "."  -%}
 
-{% assign authors_string = "" %}
-{% for author in entry.author_array %}
-    {% assign names = author.first | split: " "; %}
-    {% for name in names %}
-        {% assign initial = name | slice: 0  %}
-        {% assign authors_string = authors_string | append: initial | append: ". "  %}
-    {% endfor %}
-    {% assign authors_string = authors_string | append: author.last | append: ", " %}
-{% endfor %}
-{% assign pos = authors_string | size | minus: 2 %}
-{% assign authors_string = authors_string | slice: 0, pos %}
-{% assign authors_string = authors_string | append: "."  %}
-
-{% capture journal_string %}{{entry.booktitle}}{% endcapture %}
-{% if entry.volume %}
-        {% capture journal_string %}{{journal_string}} <b>{{ entry.volume }}</b>{% endcapture %}
-{% endif %}
-{% if entry.number %}
-    {% capture journal_string %}{{journal_string}} ({{ entry.number}}),{% endcapture %}
-{% else %}
-    {% capture journal_string %}{{journal_string}},{% endcapture %}
-{% endif %}
-{% if entry.pages %}
-    {% capture journal_string %}{{journal_string}} {{ entry.pages }},{% endcapture %}
-{% endif %}
-{% if entry.organization %}
-    {% capture journal_string %}{{journal_string}} {{ entry.organization }},{% endcapture %}
-{% endif %}
-{% if entry.year %}
-    {% capture journal_string %}{{journal_string}} {{ entry.year }}{% endcapture %}
-{% endif %}
-{% if entry.url%}
-    {% capture journal_string %} 
+{%- capture journal_string -%}{{entry.booktitle}}{%- endcapture -%}
+{%- if entry.volume -%}
+        {%- capture journal_string -%}{{journal_string}} <b>{{ entry.volume }}</b>{%- endcapture -%}
+{%- endif -%}
+{%- if entry.number -%}
+    {%- capture journal_string -%}{{journal_string}} ({{ entry.number}}),{%- endcapture -%}
+{%- else -%}
+    {%- capture journal_string -%}{{journal_string}},{%- endcapture -%}
+{%- endif -%}
+{%- if entry.pages -%}
+    {%- capture journal_string -%}{{journal_string}} {{ entry.pages }},{%- endcapture -%}
+{%- endif -%}
+{%- if entry.organization -%}
+    {%- capture journal_string -%}{{journal_string}} {{ entry.organization }},{%- endcapture -%}
+{%- endif -%}
+{%- if entry.year -%}
+    {%- capture journal_string -%}{{journal_string}} {{ entry.year }}{%- endcapture -%}
+{%- endif -%}
+{%- if entry.url-%}
+    {%- capture journal_string -%} 
     {{journal_string}}  
     <a class="regular_link" href="{{ entry.url }}">Link</a>
-    {% endcapture %}
-{% endif %}
+    {%- endcapture -%}
+{%- endif -%}
 
-{% if entry.addendum%}
-    {% capture journal_string %}{{journal_string}}, <span class="text-primary"><b>{{entry.addendum}}</b></span>{% endcapture %}
-{% endif %}
-    {% comment %}
-    {% if entry.type=="invited"%}
-        {% capture journal_string %}{{journal_string}}, (<span class="text-primary"><b>invited talk</b></span>){% endcapture %}
-    {% endif %}
-    {% endcomment %}
+{%- if entry.addendum-%}
+    {%- capture journal_string -%}{{journal_string}}, <span class="text-primary"><b>{{entry.addendum}}</b></span>{%- endcapture -%}
+{%- endif -%}
+    {%- comment -%}
+    {%- if entry.type=="invited"-%}
+        {%- capture journal_string -%}{{journal_string}}, (<span class="text-primary"><b>invited talk</b></span>){%- endcapture -%}
+    {%- endif -%}
+    {%- endcomment -%}
 
-{% capture journal_string %}{{journal_string}}.{% endcapture %}
+{%- capture journal_string -%}{{journal_string}}.{%- endcapture -%}
 
-
-{% capture reference %}
+{%- capture reference -%}
 <p>
 <b>{{ entry.title }}</b><br/>
 <em>{{authors_string}}</em><br/>
 {{ journal_string }}
 </p>
-{% endcapture %}
-
+{%- endcapture -%}
 {{reference}}

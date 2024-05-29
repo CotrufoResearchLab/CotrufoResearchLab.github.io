@@ -1,0 +1,42 @@
+{%- assign entry = include.content -%}
+
+{%- assign authors_string = "" -%}
+{%- for author in entry.author_array -%}
+    {%- assign names = author.first | split: " "; -%}
+    {%- for name in names -%}
+        {%- assign initial = name | slice: 0  -%}
+        {%- assign authors_string = authors_string | append: initial | append: ". "  -%}
+    {%- endfor -%}
+    {%- assign authors_string = authors_string | append: author.last | append: ", " -%}
+{%- endfor -%}
+{%- assign pos = authors_string | size | minus: 2 -%}
+{%- assign authors_string = authors_string | slice: 0, pos -%}
+{%- assign authors_string = authors_string | append: "."  -%}
+
+{%- capture ref -%}{{entry.note}}{%- endcapture -%}
+
+{%- if entry.url-%}
+    {%- capture ref -%}
+    <a class="regular_link" href="{{ entry.url }}">{{ref}}</a>
+    {%- endcapture -%}
+{%- endif -%}
+
+{%- if entry.year -%}
+    {%- capture ref -%}{{ref}}, {{ entry.year }}{%- endcapture -%}
+{%- endif -%}
+
+
+{%- if entry.addendum-%}
+    {%- capture ref -%}{{ref}}, <span class="text-primary"><b>{{entry.addendum}}</b></span>{%- endcapture -%}
+{%- endif -%}
+
+
+{%- capture ref -%}{{ref}}.{%- endcapture -%}
+
+{%- capture reference -%}
+<p>
+<b>{{ entry.title }}</b>, {{ ref }}<br/>
+<em>{{authors_string}}</em><br/>
+</p>
+{%- endcapture -%}
+{{reference}}

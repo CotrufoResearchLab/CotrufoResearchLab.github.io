@@ -110,3 +110,13 @@ ol.bibliography li { list-style: none }
     margin-right: 30px;
 }
 
+/* Carousel, move caption below picture */
+#carouselHomePage.carousel { padding-bottom: 4rem;  overflow: hidden; }
+#carouselHomePage .carousel-caption { top: 95%; left: 0; width:100%}
+#carouselHomePage .carousel-inner { overflow: visible; }
+#carouselHomePage .carousel-indicators { bottom: 4rem; }
+#carouselHomePage .carousel-indicators button.active{background-color: var(--bs-primary); }
+#carouselHomePage .carousel-control-next, .carousel-control-prev { bottom: 4rem;}
+#carouselHomePage .carousel-caption p{ color:black; font-size:small}
+
+
