@@ -1,16 +1,16 @@
 - image: EdgeDetection+VO2.png
-  description: Metasurfaces containing phase change materials reconfigured via small changes of temperature, <a class="regular_link" href="https://www.nature.com/articles/s41467-024-48783-3">Nature Communications <b>15</b> (1), 2237, (2024)</a>
+  description: Metasurfaces containing phase change materials reconfigured via small changes of temperature, <a class="regular_link" href="https://www.nature.com/articles/s41467-024-48783-3">Nature Communications <b>15</b> (1), 2237, (2024)</a>.
   url: https://www.nature.com/articles/s41467-024-48783-3
 
 - image: Limiter_MQW.png
-  description: Metallic antennas loaded with semiconductor multi-quantum-wells act as ultra-thin power limiters and saturable absorbers, in press in <a class="regular_link" href="https://arxiv.org/abs/2403.15911">npj Nanophotonics</a>
+  description: Metallic antennas loaded with semiconductor multi-quantum-wells act as ultra-thin power limiters and saturable absorbers, in press in <a class="regular_link" href="https://arxiv.org/abs/2403.15911">npj Nanophotonics</a>.
   url: https://arxiv.org/abs/2403.15911
 
 - image: NonreciprocalMeta.png
-  description: Nonlinear silicon metasurfaces with tailored geometrical asymmetries can induce large nonreciprocal responses in free space, <a class="regular_link" href="https://www.nature.com/articles/s41566-023-01333-7">Nature Photonics <b>18</b> (1), 81–90, (2024).</a>
+  description: Nonlinear silicon metasurfaces with tailored geometrical asymmetries can induce large nonreciprocal responses in free space, <a class="regular_link" href="https://www.nature.com/articles/s41566-023-01333-7">Nature Photonics <b>18</b> (1), 81–90, (2024)</a>.
   url: https://www.nature.com/articles/s41566-023-01333-7
 
 - image: EdgeDetection.png
-  description: Silicon metasurfaces with engineered angle- and wavelength-dependent response can perform analog image processing, <a class="regular_link" href="https://www.nature.com/articles/s41467-023-42921-z">Nature Communications <b>14</b> (1), 7078, (2023).</a>
+  description: Silicon metasurfaces with engineered angle- and wavelength-dependent response can perform analog image processing, <a class="regular_link" href="https://www.nature.com/articles/s41467-023-42921-z">Nature Communications <b>14</b> (1), 7078, (2023)</a>.
   url: https://www.nature.com/articles/s41467-023-42921-z
 
