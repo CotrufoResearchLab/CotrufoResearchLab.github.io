@@ -28,7 +28,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       <a class="regular_link" href="{{slide.url}}" target="_blank">
       <img src="{{ site.url }}{{ site.baseurl }}/images/carousel/{{slide.image}}" class="d-block w-100" alt="...">
       </a>
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption d-md-block">
         <p>{{slide.description}}</p>
       </div>
     </div>
