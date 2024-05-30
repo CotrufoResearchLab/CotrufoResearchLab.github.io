@@ -18,7 +18,7 @@
     {%- if entry.url-%}
         {%- capture journal_string -%}
         {{journal_string}} 
-        <a class="black_link" href="{{ entry.url }}">Preprint</a>
+        <a class="black_link" href="{{ entry.url }}"  target="_blank">Preprint</a>
         {%- endcapture -%}
     {%- endif -%}
 
@@ -27,7 +27,7 @@
     {%- if entry.url-%}
         {%- capture journal_string -%}
         {{journal_string}}, 
-        <a class="black_link" href="{{ entry.url }}">Preprint</a>
+        <a class="black_link" href="{{ entry.url }}"  target="_blank">Preprint</a>
         {%- endcapture -%}
     {%- endif -%}
     
@@ -49,7 +49,7 @@
     {%- endif -%}
     {%- if entry.url-%}
         {%- capture journal_string -%}   
-        <a class="regular_link" href="{{ entry.url }}">{{journal_string}}</a>
+        <a class="regular_link" href="{{ entry.url }}"  target="_blank">{{journal_string}}</a>
         {%- endcapture -%}
     {%- endif -%}
 {%- endif -%}

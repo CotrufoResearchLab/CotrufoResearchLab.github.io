@@ -16,7 +16,7 @@
 {%- capture journal_string -%}{{entry.booktitle}}{%- endcapture -%}
 {%- if entry.url-%}
     {%- capture journal_string -%} 
-    <a class="regular_link" href="{{ entry.url }}">{{journal_string}}</a>
+    <a class="regular_link" href="{{ entry.url }}"  target="_blank">{{journal_string}}</a>
     {%- endcapture -%}
 {%- endif -%}
 {%- capture journal_string -%}{{journal_string}},{%- endcapture -%}
@@ -39,11 +39,6 @@
 {%- if entry.addendum-%}
     {%- capture journal_string -%}{{journal_string}}, <span class="text-primary"><b>{{entry.addendum}}</b></span>{%- endcapture -%}
 {%- endif -%}
-    {%- comment -%}
-    {%- if entry.type=="invited"-%}
-        {%- capture journal_string -%}{{journal_string}}, (<span class="text-primary"><b>invited talk</b></span>){%- endcapture -%}
-    {%- endif -%}
-    {%- endcomment -%}
 
 {%- capture journal_string -%}{{journal_string}}.{%- endcapture -%}
 
