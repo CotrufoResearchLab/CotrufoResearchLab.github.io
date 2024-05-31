@@ -21,8 +21,7 @@ Rochester, NY 14627 <br />
 <br />
 
 <div class="alert alert-dismissible alert-warning">
-  <h4 class="alert-heading">Important</h4>
   <p class="mb-0">
-  If you are interested in joining the group as a PhD student, make sure to review the general policy of the Institute of Optics regarding <a href="https://www.hajim.rochester.edu/optics/graduate/phd.html" class="alert-link">student admission</a> before emailing the PI. Prospective PhD students must first be admitted into the Ph.D. program at The Institute of Optics and complete two semesters of coursework before applying to join any research group. Emails inquiring about available PhD positions that do not aknowledge our institute policy will not be answered.
+  If you are interested in joining the group as a PhD student, make sure to review the general policy of the Institute of Optics regarding <a href="https://www.hajim.rochester.edu/optics/graduate/phd.html" class="alert-link">student admission</a> before emailing the PI. Prospective PhD students must first be admitted into the Ph.D. program at The Institute of Optics (or other departments at UofR) and complete two semesters of coursework before applying to join any research group. Emails inquiring about available PhD positions that do not aknowledge our grad school admission policy will not be answered.
   </p>
 </div>
