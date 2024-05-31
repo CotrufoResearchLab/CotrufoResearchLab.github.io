@@ -40,7 +40,12 @@ permalink: /people/
 <div class="row">
   <div class="col-sm clearfix">
     <p>
-    <img src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.photo }}" class="img-responsive" width="20%" style="float: left" />
+    <div class="d-sm-none">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.photo }}" class="img-responsive" width="40%" style="float: left" />
+    </div>
+		<div class="d-none d-sm-block">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.photo }}" class="img-responsive" width="20%" style="float: left" />
+    </div>
     </p>
     <h4>{{ member.name }}</h4>
     <i>{{ member.info }} <!--<br>email: <{{ member.email }}> --></i>
@@ -67,40 +72,6 @@ permalink: /people/
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }} <!--<br>email: <{{ member.email }}> --></i>
   <p>{{ member.bio }}</p>
-
-  <!-- <ul style="overflow: hidden">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  {% endif %}
-
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  {% endif %}
-
-  </ul> -->
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
@@ -115,3 +86,49 @@ permalink: /people/
 {% if even_odd == 1 %}
 </div>
 {% endif %}
+
+## Undergraduate Researchers
+{% assign number_printed = 0 %}
+{% for member in site.data.team_members %}
+  {% if member.category != 'UnderGradStudent' %}
+      {% continue %}
+    {% endif %}
+{% assign even_odd = number_printed | modulo: 2 %}
+
+{% if even_odd == 0 %}
+<div class="row">
+{% endif %}
+
+<div class="col-sm-6 clearfix">
+  <p>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.photo }}" class="img-responsive" width="30%" style="float: left" />
+  </p>
+  <h4>{{ member.name }}</h4>
+  <i>{{ member.info }} <!--<br>email: <{{ member.email }}> --></i>
+  <p>{{ member.bio }}</p>
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
+{% endfor %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
+<hr class="my-2">
+
+## Alumni 
+{% for alumn in site.data.alumni %}
+<p><b>{{alumn.name}}</b>,  {{alumn.from}} 
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg>
+{{alumn.to}}
+</p>
+{% endfor %}
