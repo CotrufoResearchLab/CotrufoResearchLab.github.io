@@ -26,7 +26,7 @@ permalink: /people/
 <div class="alert alert-dismissible alert-primary" style=" margin-top:30px">
     <h3>Joining our group</h3>
     <ul style="gap: 10px; display: flex; flex-direction: column; ">
-        <li>Prospective <strong>PhD students</strong> <p class="text-danger" style="display:inline">must first be admitted into the Ph.D. program</p> at The Institute of Optics and complete two semesters of coursework before applying to join the research group (see <a href="[#](https://www.hajim.rochester.edu/optics/graduate/phd.html/)" class="alert-link">here</a> for further instruction).</li>
+        <li>Prospective <strong>PhD students</strong> <p class="text-danger" style="display:inline">must first be admitted into the Ph.D. program</p> at The Institute of Optics and complete two semesters of coursework before applying to join the research group (see <a href="https://www.hajim.rochester.edu/optics/graduate/phd.html" class="alert-link">here</a> for further instruction).</li>
 
         <li><strong>Undergraduate Students</strong> (currently enrolled at the University of Rochester) looking for a reserch project / senior thesis can contact me directly via email. Please include your CV and any other relavent information.</li>
 
@@ -123,7 +123,7 @@ permalink: /people/
 
 <hr class="my-2">
 
-## Alumni 
+### Alumni 
 {% for alumn in site.data.alumni %}
 <p><b>{{alumn.name}}</b>,  {{alumn.from}} 
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">

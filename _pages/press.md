@@ -6,6 +6,7 @@ sitemap: false
 permalink: /press/
 ---
 
+<h1>Press Releases</h1>
 <ul>
 {% for press_item in site.data.press %}
 

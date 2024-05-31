@@ -6,9 +6,26 @@ sitemap: false
 permalink: /
 ---
 
-<h1>Welcome to the Cotrufo Lab</h1>
-We are a research group located at The Institute of Optics, University of Rochester. Our research focuses on optical metamaterials and quantum optics for a broad range of applications, including imaging, analog computation, and efficient generation and manipulation of classical and quantum light.
 
+
+ <div class="row d-flex justify-content-center">
+  <div class="col-12 clearfix d-sm-none d-flex justify-content-center" style="padding-bottom:0.5rem"><!-- On Mobile -->
+    <img src="/images/logos/Hajim_v1_CMYK_lightbkgrnd.svg" width="75%" style="float: center" />
+    <!-- <img src="/images/logos/university-of-rochester-1.svg"  height="70px" style="float: center" /> -->
+  </div>
+  <div class="col-12 clearfix d-sm-none"> <!-- On Mobile -->
+    <h1>Welcome to the Cotrufo Lab</h1>
+  </div>
+  <div class="col-sm-8 col-12 clearfix d-none d-sm-block" style="padding-top:1.5rem"><!-- On Desktop -->
+    <h1>Welcome to the Cotrufo Lab</h1>
+  </div>
+  <div class="col-sm-4 col-6 clearfix d-none d-sm-block" style="height: 100px; padding:0; margin:0;">
+    <img src="/images/logos/Hajim_v1_CMYK_lightbkgrnd.svg" height="70px" style="float: center" />
+    <!-- <img src="/images/logos/university-of-rochester-1.svg"  height="70px" style="float: center" /> -->
+  </div>
+
+  </div>
+We are a research group located at The Institute of Optics, University of Rochester. Our research focuses on optical metamaterials and quantum optics for a broad range of applications, including imaging, analog computation, and efficient generation and manipulation of classical and quantum light.
 
 <h2 class="display-6">Research Highlights</h2>
 <hr class="my-2">
@@ -57,10 +74,10 @@ We are a research group located at The Institute of Optics, University of Roches
 <hr class="my-2">
 <div class="news jumbotron">
 {% if  news_item.title %}
-  <h4><span style="color:black">{{ news_item.date }}</span> {{ news_item.title }}</h4>
+  <h5><span style="color:black">{{ news_item.date }}</span> {{ news_item.title }}</h5>
   {{ news_item.description }}
 {% else %}
-  <h4><span style="color:black">{{ news_item.date }}</span> {{ news_item.title }}</h4>
+  <h5><span style="color:black">{{ news_item.date }}</span> {{ news_item.title }}</h5>
   {{ news_item.description }}
 {% endif %}
 </div>

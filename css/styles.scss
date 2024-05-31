@@ -72,7 +72,7 @@ firstp {
 
 .news { 
 	padding-top: 0.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 .news p{font-size: large;}
@@ -133,7 +133,7 @@ ol.bibliography li { list-style: none }
 #carouselHomePage .carousel-inner { overflow: visible; }
 #carouselHomePage .carousel-indicators { bottom: 4rem; }
 #carouselHomePage .carousel-indicators button.active{background-color: var(--bs-primary); }
-#carouselHomePage .carousel-control-next, .carousel-control-prev { bottom: 4rem;}
+#carouselHomePage .carousel-control-next, .carousel-control-prev { bottom: 5.5rem;}
 #carouselHomePage .carousel-caption h6{font-weight: normal; color:black;}
 
 
