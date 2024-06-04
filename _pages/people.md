@@ -6,24 +6,32 @@ sitemap: false
 permalink: /people/
 ---
 
-<h1>Group Members</h1>
+<h1 style="padding-bottom:10px">Group Members</h1>
 
-<!-- <div class="card border-primary mb-3" style="max-width: 60rem; margin-top:30px">
-  <div class="card-header"><strong>Joining our group</strong></div>
-  <div class="card-body">
-    <h4 class="card-title">Primary card title</h4>
-    <ul style="gap: 10px; display: flex; flex-direction: column;">
-        <li>Prospective <strong>PhD students</strong> <p class="text-danger" style="display:inline">must first be admitted into the Ph.D. program</p> at The Institute of Optics and complete two semesters of coursework before applying to join a research group (see <a href="[#](https://www.hajim.rochester.edu/optics/graduate/phd.html/)" class="alert-link">here</a> for further instruction).</li>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <h3>Joining our group</h3>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <ul style="gap: 10px; display: flex; flex-direction: column; ">
+        <li>Prospective <strong>PhD students</strong> <p class="text-danger" style="display:inline">must first be admitted into the Ph.D. program</p> at The Institute of Optics (or other departments at UofR) and complete two semesters of coursework before applying to join the research group (see <a href="https://www.hajim.rochester.edu/optics/graduate/phd.html" class="alert-link">here</a> for further instruction).</li>
 
         <li><strong>Undergraduate Students</strong> (currently enrolled at the University of Rochester) looking for a reserch project / senior thesis can contact me directly via email. Please include your CV and any other relavent information.</li>
 
         <li>Currently we do not have openings for <strong>Postdocs</strong>.</li>
-    </ul>  
+        </ul> 
+      </div>
+    </div>
   </div>
-</div> -->
+</div>
 
+<br />
 
-<div class="alert alert-dismissible alert-primary" style=" margin-top:30px">
+<!-- <div class="alert alert-dismissible alert-primary" style=" margin-top:30px">
     <h3>Joining our group</h3>
     <ul style="gap: 10px; display: flex; flex-direction: column; ">
         <li>Prospective <strong>PhD students</strong> <p class="text-danger" style="display:inline">must first be admitted into the Ph.D. program</p> at The Institute of Optics (or other departments at UofR) and complete two semesters of coursework before applying to join the research group (see <a href="https://www.hajim.rochester.edu/optics/graduate/phd.html" class="alert-link">here</a> for further instruction).</li>
@@ -32,7 +40,7 @@ permalink: /people/
 
         <li>Currently we do not have openings for <strong>Postdocs</strong>.</li>
     </ul> 
-</div>
+</div> -->
 
 ## Principal Investigator
 

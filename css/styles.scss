@@ -106,6 +106,10 @@ ol.bibliography li { list-style: none }
 #publications a.black_link {color:#000000}
 #publications .nav-link {font-size:x-large}
 
+.accordion-button.collapsed {
+    background: var(--bs-accordion-active-bg);
+}
+
 #people h4 {
 	color: #000000;
   }
