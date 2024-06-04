@@ -6,7 +6,7 @@ sitemap: false
 permalink: /contact/
 ---
 
-<h1>Contact</h1>
+<h1 style="padding-bottom:10px">Contact</h1>
 <p>
 Office: 516 Goergen Hall <br />
 The Institute of Optics <br />

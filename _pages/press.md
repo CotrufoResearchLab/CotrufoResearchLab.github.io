@@ -5,8 +5,7 @@ excerpt: "Cotrufo Lab at the University of Rochester"
 sitemap: false
 permalink: /press/
 ---
-
-<h1>Press Releases</h1>
+<h1 style="padding-bottom:10px">Press Releases</h1>
 <ul>
 {% for press_item in site.data.press %}
 

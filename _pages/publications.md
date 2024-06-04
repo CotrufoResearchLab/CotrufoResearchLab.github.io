@@ -6,7 +6,7 @@ sitemap: false
 permalink: /publications/
 ---
 
-
+<h1 style="padding-bottom:10px">Publications</h1>
 
 <ul class="nav nav-tabs nav-justified" role="tablist">
   <li class="nav-item" role="presentation">
