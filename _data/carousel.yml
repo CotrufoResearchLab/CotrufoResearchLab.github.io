@@ -3,8 +3,8 @@
   url: https://www.nature.com/articles/s41467-024-48783-3
 
 - image: Limiter_MQW.png
-  description: Metallic antennas loaded with semiconductor multi-quantum-wells act as ultra-thin power limiters and saturable absorbers, <a class="regular_link" href="https://www.nature.com/articles/s44310-024-00016-7">npj Nanophotonics</a>.
-  url: https://arxiv.org/abs/2403.15911
+  description: Metallic antennas loaded with semiconductor multi-quantum-wells act as ultra-thin power limiters and saturable absorbers, <a class="regular_link" href="https://www.nature.com/articles/s44310-024-00016-7">npj Nanophotonics <b>1</b> (14), (2024)</a>.
+  url: https://www.nature.com/articles/s44310-024-00016-7
 
 - image: NonreciprocalMeta.png
   description: Nonlinear metasurfaces with tailored geometrical asymmetries makes free-space light propagation nonreciprocal, <a class="regular_link" href="https://www.nature.com/articles/s41566-023-01333-7">Nature Photonics <b>18</b> (1), 81–90, (2024)</a>.
