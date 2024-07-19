@@ -10,7 +10,11 @@ permalink: /press/
 {% for press_item in site.data.press %}
 
 <li style="margin-bottom: 1rem">
+{%- if press_item.author == ""-%}
+<b>"{{ press_item.title }},"</b> 
+{% else %}
 {{ press_item.author }}, <b>"{{ press_item.title }},"</b> 
+{% endif %}
 {% for website in press_item.websites %}
 <a href="{{website.url}}">{{website.name}}</a>,
 {% endfor %}
