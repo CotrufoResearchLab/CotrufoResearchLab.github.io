@@ -8,6 +8,8 @@ permalink: /publications/
 
 <h1 style="padding-bottom:10px">Publications</h1>
 
+See also our <a class="regular_link" href="https://scholar.google.com/citations?user=oEu1DyQAAAAJ&hl=en"  target="_blank">Google Scholar profile</a>.
+
 <ul class="nav nav-tabs nav-justified" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" data-bs-toggle="tab" href="#papers" aria-selected="false" role="tab">Journal Articles</a>
@@ -135,4 +137,5 @@ permalink: /publications/
         </ol>
   </div>
 </div>
+
 
