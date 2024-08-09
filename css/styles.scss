@@ -45,9 +45,6 @@ pubtit {
 	font-weight: bold;
 }
 
-firstp {
-}
-
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -105,6 +102,9 @@ ol.bibliography li { list-style: none }
 #publications a.regular_link {text-decoration: none;}
 #publications a.black_link {color:#000000}
 #publications .nav-link {font-size:x-large}
+
+/* Research */
+#research img { margin: 16px 22px 6px 0;}
 
 .accordion-button.collapsed {
     background: var(--bs-accordion-active-bg);
