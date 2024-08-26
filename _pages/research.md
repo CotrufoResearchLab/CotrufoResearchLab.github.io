@@ -26,9 +26,14 @@ permalink: /research/
 
 <div class="row" id="compmeta">
 <h3 style="padding-top:10px; padding-bottom:0px">Optical Metamaterials for Reconfigurable Analog Computation</h3>
-<div class="row" style="padding-top:0px; margin-top:0px;">
+<div class="row" style="padding:0px; margin:0px;">
     <div class="col background-white" style="padding-top:0px; margin-top:0px;">
-            <img src="/images/research/CompMeta.png" class="w-50 w-md-100" style="float: left" />
+            <div class="d-sm-none"> <!-- On Mobile -->
+                <img src="/images/research/CompMeta.png" style="float: left; width: 100%; margin:0px;" />
+            </div>
+            <div class="d-none d-sm-block"><!-- On Desktop -->
+                <img src="/images/research/CompMeta.png" style="float: left; width: 55%; margin:8px;" />
+            </div>
             <p style="text-align: justify;">
                 All-optical computing holds the promise of increasing data rates and reducing latency and energy consumption in information processing. Metasurfaces offer an ultrathin and robust platform to accomplish these tasks in an integrated fashion. In our group, we are designing optical metasurfaces wihch perform different types of <b>spatial, temporal and spatio-temporal analog operations</b> on incoming wavefronts. Our approach relies on tailoring the metasurface spatial and/or temporal nonlocalities, and thus its dispersion, to synthesize the desired operations. For example, by carefully engineering the spectral position and dispersion of two distinct optical modes in a silicon photonic crystal<sup><a class="regular_link" href="https://www.nature.com/articles/s41467-023-42921-z" target="_blank"><b>1</b></a></sup> we recently demonstrated metasurfaces performing dual-polarization edge detection for broadband spectral inputs (>5 THz at telecom wavelengths), with high numerical aperture (0.35), large throughput efficiencies, and almost ideal isotropy. The polarization-independent response<sup><a class="regular_link" href="https://www.nature.com/articles/s41467-023-42921-z" target="_blank"><b>1</b></a></sup> is crucial when the illumination properties are unknown. 
             </p> 
