@@ -42,7 +42,7 @@ permalink: /people/
     </ul> 
 </div> -->
 
-## Principal Investigator
+<h2 id="pi">Principal Investigator</h2>
 
 {% assign member = site.data.team_members | where:"category","PI" | first %} 
 <div class="row">
@@ -61,7 +61,7 @@ permalink: /people/
   </div>
 </div>
 
-## PhD Students
+<h2 id="phdstudents">PhD Students</h2>
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
   {% if member.category != 'PhDStudent' %}
@@ -95,7 +95,7 @@ permalink: /people/
 </div>
 {% endif %}
 
-## Undergraduate Researchers
+<h2 id="undergraduateresearchers">Undergraduate Researchers</h2>
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
   {% if member.category != 'UnderGradStudent' %}
@@ -131,7 +131,7 @@ permalink: /people/
 
 <hr class="my-2">
 
-### Alumni 
+<h2 id="alumni">Alumni</h2>
 {% for alumn in site.data.alumni %}
 <p><b>{{alumn.name}}</b>,  {{alumn.from}} 
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
