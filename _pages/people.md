@@ -95,6 +95,40 @@ permalink: /people/
 </div>
 {% endif %}
 
+<h2 id="undergraduateresearchers">Master Students</h2>
+{% assign number_printed = 0 %}
+{% for member in site.data.team_members %}
+  {% if member.category != 'MasterStudent' %}
+      {% continue %}
+    {% endif %}
+{% assign even_odd = number_printed | modulo: 2 %}
+
+{% if even_odd == 0 %}
+<div class="row">
+{% endif %}
+
+<div class="col-sm-6 clearfix">
+  <p>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.photo }}" class="img-responsive" width="30%" style="float: left" />
+  </p>
+  <h4>{{ member.name }}</h4>
+  <i>{{ member.info }} <!--<br>email: <{{ member.email }}> --></i>
+  <p>{{ member.bio }}</p>
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
+{% endfor %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
 <h2 id="undergraduateresearchers">Undergraduate Researchers</h2>
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
