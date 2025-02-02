@@ -52,7 +52,7 @@ permalink: /research/optical_metamaterials_for_spatiotemporal_and_reconfigurable
             <li value="4">
                 <p>
                 <i>Temporal Signal Processing with Nonlocal Optical Metasurfaces</i>, in press in 
-                <a class="black_link" href="https://arxiv.org/abs/2403.09087" target="_blank">npj Nanophotonics (preprint)</a>
+                <a class="black_link" href="https://www.nature.com/articles/s44310-024-00039-0" target="_blank">npj Nanophotonics <b>1</b> (39), (2024).</a>
                 </p>
             </li>
             <li value="5">
