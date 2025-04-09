@@ -54,11 +54,19 @@
     {%- endif -%}
 {%- endif -%}
 
+{%- if entry.userb -%}
+    {%- capture additional_notes -%}
+    <br/><b style="background-color:#f7f37c;">{{entry.userb}}</b>
+    {%- endcapture -%}
+{%- else -%}
+    {%- capture additional_notes -%}{%- endcapture -%}
+{%- endif -%}
+
 {%- capture reference -%}
 <p>
 <b>{{ entry.title }}</b><br/>
 <em>{{authors_string}}</em><br/>
-{{ journal_string }}
+{{ journal_string }}{{additional_notes}}
 </p>
 {%- endcapture -%}
 {{reference}}
