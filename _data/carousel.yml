@@ -1,3 +1,7 @@
+- image: NonlnearEdgeDetection.png
+  description: We demonstrated that a thin unpatterned layer of GaAs can be used to impart a class of nonlinear operations on input images <a class="regular_link" href="https://www.degruyterbrill.com/document/doi/10.1515/nanoph-2024-0770/html">Nanophotonics, (2025)</a>.
+  url: https://www.degruyterbrill.com/document/doi/10.1515/nanoph-2024-0770/html
+
 - image: EdgeDetection+VO2.png
   description: Image processing metasurfaces containing phase change materials can be reconfigured by temperature variations smaller than 10&deg; C, <a class="regular_link" href="https://www.nature.com/articles/s41467-024-48783-3">Nature Communications <b>15</b> (1), 2237, (2024)</a>.
   url: https://www.nature.com/articles/s41467-024-48783-3
