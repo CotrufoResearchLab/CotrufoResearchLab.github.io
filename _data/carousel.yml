@@ -1,5 +1,5 @@
 - image: NonlnearEdgeDetection.png
-  description: We demonstrated that a thin unpatterned layer of GaAs can be used to impart a class of nonlinear operations on input images <a class="regular_link" href="https://www.degruyterbrill.com/document/doi/10.1515/nanoph-2024-0770/html">Nanophotonics, (2025)</a>.
+  description: A thin unpatterned layer of GaAs can be used to impart a class of nonlinear operations on input images <a class="regular_link" href="https://www.degruyterbrill.com/document/doi/10.1515/nanoph-2024-0770/html">Nanophotonics, (2025)</a>.
   url: https://www.degruyterbrill.com/document/doi/10.1515/nanoph-2024-0770/html
 
 - image: EdgeDetection+VO2.png
@@ -7,7 +7,7 @@
   url: https://www.nature.com/articles/s41467-024-48783-3
 
 - image: NonreciprocalMeta.png
-  description: Nonlinear metasurfaces with tailored geometrical asymmetries makes free-space light propagation nonreciprocal, <a class="regular_link" href="https://www.nature.com/articles/s41566-023-01333-7">Nature Photonics <b>18</b> (1), 81–90, (2024)</a>.
+  description: Nonlinear metasurfaces with tailored geometrical asymmetries make free-space light propagation nonreciprocal, <a class="regular_link" href="https://www.nature.com/articles/s41566-023-01333-7">Nature Photonics <b>18</b> (1), 81–90, (2024)</a>.
   url: https://www.nature.com/articles/s41566-023-01333-7
 
 - image: TimeDerivative.png
