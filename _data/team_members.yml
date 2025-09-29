@@ -26,11 +26,11 @@
     He graduated from the University at Buffalo with an Electrical Engineering degree in 2021. 
     His research interests are in the enabling technologies for computation and communication.
 
-- name: Zhengyang (Max) Zhang
-  category: MasterStudent
-  photo: MaxZhang.jpg
-  info: Master Student
-  bio: >
+#- name: Zhengyang (Max) Zhang
+#  category: MasterStudent
+#  photo: MaxZhang.jpg
+#  info: Master Student
+#  bio: >
 
 - name: Alex Sun
   category: UnderGradStudent
@@ -41,5 +41,11 @@
 - name: Steven Yuan
   category: UnderGradStudent
   photo: StevenYuan.png
+  info: Undergraduate Researcher
+  bio: >
+
+- name: Tianqiao Zhang
+  category: UnderGradStudent
+  photo: Tianqiao Zhang.jpeg
   info: Undergraduate Researcher
   bio: >

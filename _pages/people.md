@@ -95,7 +95,8 @@ permalink: /people/
 </div>
 {% endif %}
 
-<h2 id="undergraduateresearchers">Master Students</h2>
+<!---
+<h2 id="mastersearchers">Master Students</h2>
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
   {% if member.category != 'MasterStudent' %}
@@ -128,6 +129,7 @@ permalink: /people/
 {% if even_odd == 1 %}
 </div>
 {% endif %}
+-->
 
 <h2 id="undergraduateresearchers">Undergraduate Researchers</h2>
 {% assign number_printed = 0 %}
