@@ -67,7 +67,7 @@ permalink: /research/nonlinear_metamaterials
             <li value="6">
                 <p>
                 <i>Nonlinear Analog Processing with Anisotropic Nonlinear Films</i>,
-                <a class="regular_link" href="https://arxiv.org/abs/2409.16448" target="_blank">preprint.</a>
+                <a class="regular_link" href="https://www.degruyterbrill.com/document/doi/10.1515/nanoph-2024-0770/html" target="_blank">Nanophotonics (2025)</a>
                 </p>
             </li>
             </ol>
