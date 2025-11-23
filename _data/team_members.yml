@@ -32,11 +32,11 @@
 #  info: Master Student
 #  bio: >
 
-- name: Alex Sun
-  category: UnderGradStudent
-  photo: AlexSun.jpg
-  info: Undergraduate Researcher
-  bio: >
+#- name: Alex Sun
+#  category: UnderGradStudent
+#  photo: AlexSun.jpg
+#  info: Undergraduate Researcher
+#  bio: >
 
 - name: Steven Yuan
   category: UnderGradStudent
