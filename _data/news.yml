@@ -1,4 +1,20 @@
 - title: New publication
+  date: Feb 4, 2026
+  description: > 
+   <p>In a recently published paper led by Felix Wong, we show that bilayer metasurfaces with a controllable twist can be used for reconfigurable analog temporal computation. We demonstrated numerically 
+   a device whose operation can be continuosly tuned between 'no operation', first-order time derivative, and second-order time derivative, incluiding superpositions of these operations. The device can also operate in dual-band,
+   simultaneously processing signals carried by two frequencies.
+   The work has been published in <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adom.202502326">Advanced Optical Materials</a>, and featured
+   on the <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adom.70748">back cover</a> of the issue .</p>
+    <div class="row">
+      <div class="col-sm-12 col-12 clearfix">
+        <figure class="figure">
+          <a href="/images/news/Paper__News_ReconfigurableMS_MechanicalTwist.png"><img src="/images/news/Paper__News_ReconfigurableMS_MechanicalTwist.png" class="figure-img img-fluid rounded" width="75%"  /></a>
+        </figure>
+      </div>
+    </div>
+
+- title: New publication
   date: Oct 27, 2025
   description: > 
    <p>Together with collaborators from Columbia University, CUNY, and Politecnico di Milano (Italy), we demonstrated that patterning thin flakes of 3R-MoS2 into periodic metasurfaces can lead to two orders of magnitude (140×) 
