@@ -15,6 +15,24 @@
     </div>
 
 - title: New publication
+  date: Feb 2, 2026
+  description: > 
+   <p>Our work on nonlinear nonlocal metasurfaces has been published in <a href="https://link.springer.com/article/10.1186/s43593-025-00116-7">eLight</a>, and covered in several press releases
+   (<a href="https://www.sciencedaily.com/releases/2026/02/260204121538.htm">ScienceDaily</a>,
+   <a href="https://phys.org/news/2026-02-ultra-thin-metasurface-chip-invisible.html">Phys.org</a>,
+   <a href="https://www.eurekalert.org/news-releases/1114950">EurekAlert!</a>,
+   <a href="https://www.laserfocusworld.com/optics/article/55353983/nonlinear-metasurfaces-convert-infrared-light-to-visible">LaserFocusWorld.com</a>). In this work we experimentally demonstrated 
+   nonlinear nonlocal metasurfaces that simultaneously enhance light-matter interactions, boosting nonlinear conversion efficiency, and enable precise subwavelength control over the wavefront of the generated light.
+   In particular, we demonstrated a silicon metasurface for beam steering of third-harmonic generation in the visible controlled by the pump polarization.</p>
+    <div class="row">
+      <div class="col-sm-12 col-12 clearfix">
+        <figure class="figure">
+          <a href="/images/news/THG_GeomPhase.png"><img src="/images/news/THG_GeomPhase.png" class="figure-img img-fluid rounded" width="75%"  /></a>
+        </figure>
+      </div>
+    </div>
+
+- title: New publication
   date: Oct 27, 2025
   description: > 
    <p>Together with collaborators from Columbia University, CUNY, and Politecnico di Milano (Italy), we demonstrated that patterning thin flakes of 3R-MoS2 into periodic metasurfaces can lead to two orders of magnitude (140×) 
