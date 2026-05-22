@@ -2,5 +2,4 @@
 .github/
 .git/
 _site/
-GemFile.lock
 _assets_gitignore/
