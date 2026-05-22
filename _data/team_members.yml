@@ -26,6 +26,15 @@
     He graduated from the University at Buffalo with an Electrical Engineering degree in 2021. 
     His research interests are in the enabling technologies for computation and communication.
 
+- name: Jeehyun (Jen) Lee
+  category: PhDStudent
+  photo: JenLee.png
+  info: PhD Student
+  bio: >
+    Jeehyun is currently a PhD student at the Institute of Optics at the University of Rochester. 
+    She received a B.S. and M.S. in Electrical and Computer Engineering from Seoul National University in 2021 and 2023, respectively. 
+    Her primary interests lie in nanophotonics, particularly at its intersections with optical computation, nonlinear optics, and quantum optics.
+
 #- name: Zhengyang (Max) Zhang
 #  category: MasterStudent
 #  photo: MaxZhang.jpg
@@ -38,11 +47,11 @@
 #  info: Undergraduate Researcher
 #  bio: >
 
-- name: Steven Yuan
-  category: UnderGradStudent
-  photo: StevenYuan.png
-  info: Undergraduate Researcher
-  bio: >
+#- name: Steven Yuan
+#  category: UnderGradStudent
+#  photo: StevenYuan.png
+#  info: Undergraduate Researcher
+#  bio: >
 
 - name: Tianqiao Zhang
   category: UnderGradStudent
