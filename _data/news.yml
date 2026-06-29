@@ -1,3 +1,25 @@
+- title: New group memmbers
+  date: June 1, 2026
+  description: > 
+   <p>Jeehyun (Jen) Lee and Levi Homer joined the group as PhD students. Welcome!</p>
+
+- title: New publication
+  date: May 22, 2026
+  description: > 
+   <p>Our work on designing multi-layer metasurfaces for advanced angular control of light has been published in <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/lpor.202502168">Laser & Photonics Reviews</a>. In this paper, we discuss a general recipe to design 
+   multi-layer metasurfaces to induce non-trivial angle-dependent responses. As an example, we numerically demonstrate 1D and 3D bilayer devices that combine a local metasurface with a nonlocal one.
+   By combining the starkly different angular response of the two layers, we are able to realize angular band-pass filters: devices which stop light propagation at normal incidence and at large angle, while allowing light to pass at intermediate angles.
+    
+    The work has been led by former undergraduate researcher Nicholas Gaitanis.
+    
+    <div class="row">
+      <div class="col-sm-12 col-12 clearfix">
+        <figure class="figure">
+          <a href="/images/news/BilayerMS_Nick.png"><img src="/images/news/BilayerMS_Nick.png" class="figure-img img-fluid rounded" width="75%"  /></a>
+        </figure>
+      </div>
+    </div>
+
 - title: New publication
   date: Feb 4, 2026
   description: > 
